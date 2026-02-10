@@ -97,7 +97,7 @@ static void SwapEndianess(u32 * bufIn, u32 * buf, u32 sizeBytes)
 #ifndef H1_PRECALC_CABAC_INIT
 u32 H264CabacInit(u32 * contextTable, u32 cabac_init_idc)
 {
-    const i32(*ctx)[460][2];
+    const int(*ctx)[460][2];
     int i, j, qp;
     u8 *table = (u8 *) contextTable;
 

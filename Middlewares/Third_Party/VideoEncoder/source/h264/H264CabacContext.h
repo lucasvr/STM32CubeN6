@@ -220,7 +220,7 @@ static const int h264ContextInitIntra[460][2] = {
 
 /* P and B  Slices can have  cabac_init_idc == 0, 1 or 2 */
 
-static const i32 h264ContextInit[3][460][2] = {
+static const int h264ContextInit[3][460][2] = {
     /* cabac_init_idc == 0 */
     {
      /* 0 -> 10 */
