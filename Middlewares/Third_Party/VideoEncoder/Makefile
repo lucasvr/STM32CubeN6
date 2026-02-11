@@ -13,8 +13,9 @@ OBJS = $(SOURCES:.c=.o)
 LIB_NAME = libhantro-vc8000-nano-e.a
 
 CFLAGS += -I$(TOP_DIR)/inc -I$(TOP_DIR)/source/common -I$(TOP_DIR)/source/h264
-CFLAGS += -g -ggdb -O2 -Wall -fno-short-enums -nostdlib -mcpu=cortex-m55 -mcmse -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard
-CFLAGS += -DH264ENC_TRACE
+CFLAGS += -g -ggdb -O3 -Wall -std=gnu17 -nostdlib -mcpu=cortex-m55 -mcmse -mthumb
+CFLAGS += -fno-short-enums -ffixed-r9
+#CFLAGS += -DH264ENC_TRACE
 
 .PHONY : all clean
 
